@@ -5,7 +5,7 @@
  *
  */
 public class Practice02Test {
-	//this should test push
+	//xiugai
 	// This helps create and place 
     public boolean createAndPlaceQueens(int size) {
     	NQueens nq = new NQueens(size);
