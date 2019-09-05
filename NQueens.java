@@ -50,8 +50,12 @@ public class NQueens {
 	
 	void printToConsole(int[][] board) {
 		for (int i = 0; i < size; i++) { 
-            for (int j = 0; j < size; j++) 
-                System.out.print(" " + board[i][j] + " "); 
+            for (int j = 0; j < size; j++) {
+            	if(board[i][j] == 1)
+            		System.out.print(" Q ");
+            	if(board[i][j] == 0)
+            		System.out.print(" _ ");
+            }
             System.out.println(); 
 		}
 	}
