@@ -1,6 +1,6 @@
 
 public class NQueens {
-	int size;
+	int size; //size of the chessboard.
 	private int[][] boards;
 	
 	public NQueens(int size2) {
@@ -17,7 +17,8 @@ public class NQueens {
 		}
 		return true;
 	}
-
+	
+	//place a Queen in each column.
 	boolean placeNQueens(int col,int[][] board) {
 		if(col==size) {
 			printToConsole(board);
@@ -33,7 +34,8 @@ public class NQueens {
 		}
 		return false;
 	}
-
+	
+	//check if the Queens attack each other.
 	boolean isAttacked(int row, int col, int[][] board) {
 		int i, j; 
         for (i = 0; i < col; i++) 
@@ -48,6 +50,7 @@ public class NQueens {
 		return false;
 	}
 	
+	//print the chessboard.	
 	void printToConsole(int[][] board) {
 		for (int i = 0; i < size; i++) { 
             for (int j = 0; j < size; j++) {
