@@ -5,7 +5,6 @@
  *
  */
 public class Practice02Test {
-	//xiugai
 	// This helps create and place 
     public boolean createAndPlaceQueens(int size) {
     	NQueens nq = new NQueens(size);
